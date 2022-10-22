@@ -6,15 +6,17 @@ const upload = async (req, res) => {
 
     try {
         await uploadFile(req, res);
-
+        console.log('Enviar archivo ' + req.file)
+        
         if (req.file == undefined) {
             return res.status(400).send({ message: "Please upload a file!" });
         }
 
         var pyProcess = cmd.run('python script.py ' + '"'+ req.file.originalname + '"' ,
+            
             function (data, err, stderr) {
                 if (!err) {
-                    console.log("data from python script " + data)
+                    console.log('Esperando respuesta...')
                 } else {
                     console.log("python script cmd error: " + err)
                 }
@@ -62,6 +64,7 @@ const getListFiles = (req, res) => {
 };
 
 const download = (req, res) => {
+    console.log("downloading...");
     const fileName = req.params.name;
     const directoryPath = __basedir + "/resources/";
 
