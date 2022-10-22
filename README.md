@@ -38,4 +38,4 @@ ngrok http 8080 -region=eu
 
 ### Resultado
 
-![example](img1.png)
+![example](image.jpeg)
