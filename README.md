@@ -10,19 +10,31 @@ Facilitar la adaptación de nuestros mayores a las nuevas tecnologías
 
 ### Descarga y ejecución
 1. Descargar el repo <br/>
-```git clone https://github.com/tiantianana/H4G```
+```
+git clone https://github.com/tiantianana/H4G
+```
 
 2. Ejecutar Android 
-```./studio.sh```
+```
+./studio.sh
+```
 
 3. Ejecutar API
-```npm start / node server.js```
-```npm start / node server.js```
+```
+npm start / node server.js
+```
+```
+npm start / node server.js
+```
 
 4. Ejecutar PostMan
-```http://localhost:8080```
+```
+http://localhost:8080
+```
 o 
-```ngrok http 8080 -region=eu ```
+```
+ngrok http 8080 -region=eu
+```
 
 ### Resultado
 
